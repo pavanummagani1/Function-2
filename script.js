@@ -17,10 +17,15 @@ function undefinedValue(a){
 console.log(undefinedValue());
 
 //4. Suppose you have a function that takes an array as a parameter. How would you check inside the function if the array is empty?
-function undefinedValue(a){
-    return a
+function isArrayEmpty(array){
+    if(array.length==0){
+        return `The Given Array is Empty`
+    }
+    else{
+        return `The Given Array is Not Empty`
+    }
 }
-console.log(undefinedValue());
+console.log(isArrayEmpty([10,10,10]));
 
 //5. write a function that takes two numbers as parameters and returns their difference.
 function differenceOfTwoNums(a,b){
