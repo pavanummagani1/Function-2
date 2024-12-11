@@ -41,7 +41,7 @@ console.log(differenceOfTwoNums('Pavan Kalyan', 24));
 
 //7.Write a function that takes a number as a parameter and returns true if the number is a even number, otherwise false.
 function isEven(number){
-    if(number%2==0){
+    if(number%2==0 &&number>0){
         return true;
     }
     else{
